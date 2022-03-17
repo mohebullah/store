@@ -1,0 +1,826 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(font-farsi/Sans\ a4fran3.woff) format('woff');
+  }
+
+  body{
+    font-family: myFont;
+   
+  }
+.continer{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.continer .top-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #f2f2f2;
+    padding: 0.5% 7%;
+
+}
+
+.top-header .logo i {
+    margin: 0 5px;
+    font-size: 20px;
+
+}
+
+.top-header .login-sign i{
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+
+.continer header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #333333;
+    padding: 10px 7%;
+
+}
+
+
+.continer header nav{
+    margin-top: 0.8%;
+}
+.continer header nav ul li{
+    list-style: none;
+    display: inline;
+    padding: 1px 16px;
+    
+
+}
+
+.continer header nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: myFont;
+    padding: 23px 15px;
+    transition: all 0.2s;
+    
+}
+
+.continer header nav ul li a:hover{
+    background: #666666;
+    color: #d9d9d9;
+}
+
+.continer header  i{
+    color: white;
+}
+
+.continer header .logo i{
+    font-size: 3rem;
+
+}
+
+.continer header .left {
+    margin-top: 0.7%;
+}
+
+.continer header .left i{
+    margin: 0 5px;
+}
+
+
+/* slider bug */
+
+.sliders{
+   margin-top: 100px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+
+.sliders{
+    margin-top: -1px;
+}
+
+.sliders .swiper {
+  width: 100%;
+  height: 70vh;
+}
+
+.sliders .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* width: 100%;
+  height: 100vh; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.sliders .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+
+/* card Producr */
+
+.card-product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 6%;
+    margin-bottom: 5%;
+}
+
+.card-product .card{
+    margin: 0 10px;
+    background: white;
+    position: relative;
+}
+
+.card-product .card{
+    width: 23%;
+    text-align: center;
+    
+    box-shadow: 5px 0 14px 10px gray;
+    height: 80%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+    
+}
+
+.card-product .card img{
+    width: 100%;
+    height: 40vh;
+    margin: 0 auto;
+    transition: transform 1s;
+   
+}
+
+.card-product .card img:hover{
+    transform: scale(1.1,1.1);
+
+}
+
+
+#cards{
+    margin-right: 30px;
+}
+
+.card-product .card h2{
+    font-family: myFont;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.card-product .card p{
+    font-family: myFont;
+    margin-bottom: 20px;
+}
+
+.card-product .card h3{
+    margin-bottom: 20px;
+}
+
+.card .star{
+    margin-bottom: 20px;
+}
+
+.card button{
+    padding: 20px 20px;
+    
+   
+    width: 100%;
+    
+   
+    border: 0;
+    color: white;
+
+}
+
+.rd{
+    color: red;
+}
+
+.bg-rd{
+    background: red;
+}
+
+
+.gold{
+    color: #ffb31a;
+}
+
+.bg-gold{
+    background: #ffb31a;
+}
+
+.green{
+    color: #00e600;
+}
+
+.bg-green{
+    background: #00e600;
+}
+
+.unset{
+    color: #ffb31a;
+}
+
+.title{
+    width: 90%;
+    background: #ffb31a;
+    color: white;
+    padding: 10px 20px;
+    font-family: myFont;
+    border-radius: 50px;
+    margin: 0 auto;
+    
+    box-shadow: 5px 0 14px 10px gray;;
+
+
+}
+
+/* ارسال رایگان */
+
+.arsal{
+    width: 100%;
+    display: flex;
+    padding: 0 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.arsal .free{
+    width: 30%;
+    text-align: right;
+    display: flex;
+    font-family: myFont;
+    
+}
+.arsal .free .p-h{
+    margin-right: 15px;
+}
+.arsal .free i{
+    font-size: 35px;
+    margin-top: 8px;
+    color: #ffb31a;
+
+}
+
+
+/* اسلایدر برای محصولات */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+ 
+
+.slider-products .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-products .swiper-slide {
+
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: 5%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 5px 0 14px 10px #bfbfbf;
+  margin-bottom: 5%;
+}
+
+.slider-products .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prod-slider{
+    font-family: myFont;
+}
+
+
+.prod-slider h3{
+    text-align: center;
+    padding: 10px 0;
+   
+    
+}
+
+.prod-slider p{
+    margin: 0 10px;
+    
+}
+
+.prod-slider button{
+    width: 100%;
+    padding: 20px 0;
+    font-family: myFont;
+    border: 0;
+    background: #ffb31a;
+    color: white;
+}
+
+.prod-slider .star{
+   margin: 20px 0;
+}
+
+/* tow product */
+
+.tow-product{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5% 0;
+    padding: 0 5%;
+
+}
+
+.prod-one{
+    width: 47%;
+    height: 40vh;  
+    background: #f2f2f2;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.tow-product img{
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 30px;
+}
+
+.prod-tow{
+    width: 47%;
+    height: 40vh;
+    background: #e6e6e6;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+/* Footer */
+
+footer{
+    background: #cccccc;
+    padding: 5% 5%;
+}
+.botton-footer {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    font-size: 1.3rem;
+    font-family: myFont;
+    padding-bottom: 5%;
+    border-bottom: 1px solid black;
+
+}
+
+.botton-footer .footer li{
+    display: block;
+    list-style: none;
+    margin: 10px 0;
+}
+.botton-footer .footer li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.mobile{
+    padding: 2% 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.mobile i{
+    margin: 0 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.mobile a{
+    text-decoration: none;
+    color: #4d4d4d;
+    
+}
+.mobile i:hover{
+
+    background: #737373;
+    color: #bfbfbf;
+    
+}
+
+
+/* hide tag */
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    /* show tag */
+    .hide{
+        display: block;
+    }
+    .hidep{
+        display: none;
+    }
+
+  
+    .continer header{
+       
+        width: 100%;
+        height: 10vh;
+       
+        background: #333333;
+        
+        position: relative;
+    
+    }
+    .left{
+        display: none;
+    }
+
+    .menue{
+        margin-top: 3%;
+        margin-right: 5px;
+    }
+
+    .menue i{
+        font-size: 28px;
+    }
+    
+    
+    nav{   
+        position: absolute;
+        right: -40%;
+        z-index: 5;
+        width: 40%;
+        background: #f2f2f2;
+        top: 95%;
+        height: 70vh;  
+        transition: all 1s;
+    }
+    .continer header nav ul li{
+        list-style: none;
+        display: block;
+        padding: 7px 5px;
+       border-bottom: 1px solid #737373;
+        
+        
+    
+    }
+
+    .continer header nav ul li:hover{
+        background: #666666;
+        color: white;
+    }
+
+    .continer header nav ul li a:hover{
+        background: unset;
+        color: white;
+    }
+    
+    .continer header nav ul li a{
+        text-decoration: none;
+        color: #737373;
+        text-align: center;
+        font-family: myFont;
+        padding: 23px 15px;
+        transition: all 0.2s;
+        font-size: 13px;
+        
+    }
+    .home{
+        margin-top: 5px;
+    }
+
+    .continer header .logo{
+        
+        position: absolute;
+        left: 14px;
+        top: 32%;
+
+    
+    }
+
+    .continer header .logo i{
+        font-size: 28px;
+    }
+    .sliders{
+        margin-top: 0;
+    }
+
+    #close{
+        display: none;
+    }
+    
+
+
+    /* card Producr */
+
+.card-product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 6%;
+    margin-bottom: 5%;
+}
+
+.card-product .card{
+    margin: 0 4px;
+    background: white;
+    position: relative;
+}
+
+.card-product .card{
+    width: 30%;
+    text-align: center;
+    
+    box-shadow: 5px 0 14px 10px gray;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+}
+
+.card-product .card img{
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    transition: transform 1s;
+   
+}
+
+
+
+#cards{
+    margin-right: 1px;
+}
+
+.card-product .card h2{
+    font-family: myFont;
+    margin-bottom: 2px;
+    font-size:10px;
+    
+}
+
+
+
+.card-product .card p{
+    font-family: myFont;
+    margin-bottom: 2px;
+    font-size: 8px;
+}
+
+.card-product .card h3{
+    margin-bottom: 1px;
+    font-size: 10px;
+}
+
+.card .star{
+    margin-bottom: 1px;
+}
+
+.card .star i{
+    font-size:8px;
+}
+
+.card button{
+    padding: 10px 10px;
+   font-size: 10px;
+    width: 100%;
+    
+   
+    border: 0;
+    color: white;
+
+}
+
+
+
+.title{
+    width: 90%;
+    
+    padding: 5px 10px;
+    
+    border-radius: 40px;
+    
+    font-size: 10px;
+    
+}
+
+/* ارسال رایگان */
+
+.arsal{
+    width: 100%;
+    display: flex;
+    padding: 0 5%;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.arsal .free{
+    width: 35%;
+    text-align: center;
+    display: block;
+    font-family: myFont;
+    margin: 0 5px;
+    
+}
+.arsal .free .p-h{
+    margin-right: 0;
+    font-size: 5px;
+}
+.arsal .free i{
+    font-size: 15px;
+    margin-top: 8px;
+    color: #ffb31a;
+
+}
+
+/* slider-product */
+
+
+
+ 
+
+.slider-products .swiper {
+  width: 80%;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+  
+}
+
+.slider-products .swiper-slide {
+
+  text-align: center;
+  font-size: 10px;
+  background: white;
+  border: 1px solid gray;
+  /* Center slide text vertically */
+ 
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 0 0 0 white;
+  margin-bottom: 5%;
+}
+
+
+
+
+
+
+.prod-slider h3{
+    
+    padding: 5px 0;
+   
+    
+}
+
+.prod-slider p{
+    margin: 0 10px;
+    
+}
+
+.prod-slider button{
+   
+    padding: 7px 0;
+    
+    color: white;
+    font-size: 10px;
+    
+}
+
+.prod-slider .star{
+   margin: 5px 0;
+}
+
+.slider-products .swiper-pagination{   
+    margin-top: 100px;
+}
+
+
+/* tow product */
+/* .tow-product{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5% 0;
+    padding: 0 5%;
+
+} */
+
+.prod-one{
+    width: 47%;
+    height: 100%;  
+    
+}
+
+.tow-product img{
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 20px;
+}
+
+.prod-tow{
+    width: 47%;
+    height: 100%;
+    background: #e6e6e6;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px gray;
+}
+
+/* footer */
+
+
+.botton-footer {
+    font-size: 0.6rem;
+}
+
+
+.mobile{
+    padding: 2% 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5rem;
+}
+.mobile i{
+    margin: 0 6px;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.mobile a{
+    text-decoration: none;
+    color: #4d4d4d;
+    
+}
+.mobile i:hover{
+
+    background: #737373;
+    color: #bfbfbf;
+    
+}
+
+  }
